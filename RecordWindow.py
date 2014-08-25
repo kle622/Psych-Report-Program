@@ -1,8 +1,9 @@
 import wx
+import sys
 from datetime import datetime
 from Record import Record
 from RecordCreate import RecordCreate
-from ObjectListView import ObjectListView, ColumnDefn
+from ObjectListView import ObjectListView, ColumnDefn, EVT_CELL_EDIT_FINISHED
 from ClearSafetyCheck import ClearSafetyCheck
 
 class RecordWindow(wx.Frame):
@@ -138,6 +139,8 @@ class RecordWindow(wx.Frame):
 		self.Center()
 		self.Show()
 		self.safety_check = ClearSafetyCheck(self.parent)
+		self.Bind(wx.EVT_CLOSE, self.OnClose)
+		self.Bind(EVT_CELL_EDIT_FINISHED, self.SaveOnEdit)
 
 	def AddRecord(self, evt):
 		source = self.source_box.GetValue()
@@ -178,6 +181,14 @@ class RecordWindow(wx.Frame):
 		self.report_date_box.Clear()
 		self.pages_box.Clear()
 		self.comment_box.Clear()
+
+	def OnClose(self, evt):
+		self.Destroy()
+		sys.exit(0)
+
+	def SaveOnEdit(self, evt):
+		self.parent.SaveRecordReport()
+		print 'gettin here'
 
 
 

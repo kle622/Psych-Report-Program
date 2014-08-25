@@ -1,0 +1,9 @@
+('C:\\Users\\Kevin\\Documents\\GitHub\\Psych-Report-Program\\dist\\ClearSafetyCheck.exe',
+ True,
+ False,
+ None,
+ None,
+ [],
+ None,
+ False,
+ 1408948069L)

@@ -26,7 +26,6 @@ class ClearSafetyCheck(wx.Frame):
 
 		self.hori_sizer2.AddStretchSpacer(1)
 		self.hori_sizer2.Add(self.yes_button, 2, wx.ALL | wx.EXPAND, 5)
-		self.hori_sizer2.AddStretchSpacer(1)
 		self.hori_sizer2.Add(self.no_button, 2, wx.ALL | wx.EXPAND, 5)
 		self.hori_sizer2.AddStretchSpacer(1)
 

@@ -26,11 +26,12 @@ class RecordController:
 		self.record_create.CreateTable()
 
 	def ClearAllRecords(self):
-		for index in range(len(self.record_list)):
-			self.DeleteRecord(0)
+		if os.path.isfile('record_report_save_file.txt'):
+			os.remove('record_report_save_file.txt')
+		del self.record_list[:]
+		self.record_window.list_ctrl.SetObjects(self.record_list)
 
 	def SaveRecordReport(self):
-
 		source = []
 		type_source = []
 		date = []

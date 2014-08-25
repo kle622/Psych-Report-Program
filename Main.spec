@@ -1,6 +1,6 @@
 # -*- mode: python -*-
 a = Analysis(['Main.py'],
-             pathex=['C:\\Users\\Kevin\\Desktop\\Psych Report Program'],
+             pathex=['C:\\Users\\Kevin\\Documents\\GitHub\\Psych-Report-Program'],
              hiddenimports=[],
              hookspath=None,
              runtime_hooks=None)
