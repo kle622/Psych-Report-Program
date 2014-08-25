@@ -1,6 +1,7 @@
 from Record import Record
 from RecordWindow import RecordWindow
 from RecordCreate import RecordCreate
+from send2trash import send2trash
 import csv
 import os
 
@@ -27,7 +28,8 @@ class RecordController:
 
 	def ClearAllRecords(self):
 		if os.path.isfile('record_report_save_file.txt'):
-			os.remove('record_report_save_file.txt')
+			#os.remove('record_report_save_file.txt')
+			send2trash('record_report_save_file.txt')
 		del self.record_list[:]
 		self.record_window.list_ctrl.SetObjects(self.record_list)
 
