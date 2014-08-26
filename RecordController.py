@@ -9,7 +9,7 @@ class RecordController:
 	def __init__(self):
 		self.record_list = []
 		self.record_window = RecordWindow(self)
-		self.record_create = RecordCreate(self.record_list)
+		self.record_create = RecordCreate(self, self.record_list)
 		self.LoadRecordReport()
 
 

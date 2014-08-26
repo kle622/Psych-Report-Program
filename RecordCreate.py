@@ -2,11 +2,16 @@ import win32com.client as win32
 from Record import Record
 
 class RecordCreate:
-	def __init__(self, records):
+	def __init__(self, parent, records):
 		self.records = records
+		self.parent = parent
 
 	def CreateTable(self):
-		self.records.sort(Record.Compare)
+		try:
+			self.records.sort(Record.Compare)
+		except ValueError:
+			self.parent.record_window.status_bar.SetStatusText('Record(s) has invalid date format.')
+
 		word = win32.gencache.EnsureDispatch('Word.Application')
 		word.Visible = True
 		word.Documents.Add()
