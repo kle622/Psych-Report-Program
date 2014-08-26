@@ -545,7 +545,7 @@ posix: None -> None
 __main__: <PyScript '__main__' C:\Python27\lib\site-packages\PyInstaller\loader\pyi_os_path.py imports=[('sys', 0, 0, -1), ('posix.environ', 0, 1, -1), ('nt.listdir', 0, 1, -1), ('nt.environ', 0, 1, -1), ('posix', 0, 1, -1), ('posix.listdir', 0, 1, -1), ('nt', 0, 1, -1)] binaries=[] datas=[]> -> <PyScript '__main__' Main.py imports=[('RecordWindow', 0, 0, -1), ('wx', 0, 0, -1), ('sys', 0, 0, -1), ('RecordController', 0, 0, -1), ('RecordWindow.RecordWindow', 0, 0, -1), ('RecordController.RecordController', 0, 0, -1)] binaries=[] datas=[]>
 RecordWindow: None -> <PyModule 'RecordWindow' C:\Users\Kevin\Documents\GitHub\Psych-Report-Program\RecordWindow.pyc imports=[('RecordCreate', 0, 0, -1), ('Record', 0, 0, -1), ('wx', 0, 0, -1), ('sys', 0, 0, -1), ('RecordCreate.RecordCreate', 0, 0, -1), ('ClearSafetyCheck', 0, 0, -1), ('ObjectListView.ColumnDefn', 0, 0, -1), ('datetime', 0, 0, -1), ('ObjectListView', 0, 0, -1), ('Record.Record', 0, 0, -1), ('ObjectListView.EVT_CELL_EDIT_FINISHED', 0, 0, -1), ('ObjectListView.ObjectListView', 0, 0, -1), ('ClearSafetyCheck.ClearSafetyCheck', 0, 0, -1), ('datetime.datetime', 0, 0, -1)] binaries=[] datas=[]>
 wx: None -> <PkgModule 'wx' C:\Python27\lib\site-packages\wx-3.0-msw\wx\__init__.pyc imports=[('__version__', 0, 0, -1), ('wx._core', 0, 0, -1), ('wx._core.*', 0, 0, -1)] binaries=[] datas=[]>
-RecordController: None -> <PyModule 'RecordController' C:\Users\Kevin\Documents\GitHub\Psych-Report-Program\RecordController.pyc imports=[('RecordWindow', 0, 0, -1), ('RecordCreate', 0, 0, -1), ('Record', 0, 0, -1), ('RecordCreate.RecordCreate', 0, 0, -1), ('csv', 0, 0, -1), ('os', 0, 0, -1), ('RecordWindow.RecordWindow', 0, 0, -1), ('Record.Record', 0, 0, -1)] binaries=[] datas=[]>
+RecordController: None -> <PyModule 'RecordController' C:\Users\Kevin\Documents\GitHub\Psych-Report-Program\RecordController.pyc imports=[('RecordWindow', 0, 0, -1), ('RecordCreate', 0, 0, -1), ('Record', 0, 0, -1), ('send2trash', 0, 0, -1), ('RecordCreate.RecordCreate', 0, 0, -1), ('csv', 0, 0, -1), ('os', 0, 0, -1), ('RecordWindow.RecordWindow', 0, 0, -1), ('send2trash.send2trash', 0, 0, -1), ('Record.Record', 0, 0, -1)] binaries=[] datas=[]>
 RecordCreate: None -> <PyModule 'RecordCreate' C:\Users\Kevin\Documents\GitHub\Psych-Report-Program\RecordCreate.pyc imports=[('Record', 0, 0, -1), ('win32com.client', 0, 0, -1), ('Record.Record', 0, 0, -1)] binaries=[] datas=[]>
 Record: None -> <PyModule 'Record' C:\Users\Kevin\Documents\GitHub\Psych-Report-Program\Record.pyc imports=[('datetime', 0, 0, -1), ('datetime.datetime', 0, 0, -1)] binaries=[] datas=[]>
 ClearSafetyCheck: None -> <PyModule 'ClearSafetyCheck' C:\Users\Kevin\Documents\GitHub\Psych-Report-Program\ClearSafetyCheck.pyc imports=[('wx', 0, 0, -1)] binaries=[] datas=[]>
@@ -773,7 +773,98 @@ wx.lib.wordwrap: None -> <PyModule 'wx.lib.wordwrap' C:\Python27\lib\site-packag
 ObjectListView.bisect: None -> None
 bisect: None -> <PyModule 'bisect' C:\Python27\lib\bisect.pyc imports=[('_bisect', 0, 0, -1), ('_bisect.*', 0, 0, -1)] binaries=[] datas=[]>
 _bisect: None -> <BuiltinModule '_bisect' None imports=[] binaries=[] datas=[]>
+send2trash: None -> <PkgModule 'send2trash' C:\Python27\lib\site-packages\send2trash\__init__.pyc imports=[('plat_win.send2trash', 0, 1, 1), ('plat_gio.send2trash', 0, 1, 1), ('sys', 0, 0, -1), ('plat_osx.send2trash', 0, 1, 1), ('plat_osx', 0, 1, 1), ('plat_gio', 0, 1, 1), ('plat_other.send2trash', 0, 1, 1), ('plat_win', 0, 1, 1), ('plat_other', 0, 1, 1)] binaries=[] datas=[]>
 csv: None -> <PyModule 'csv' C:\Python27\lib\csv.pyc imports=[('_csv.field_size_limit', 0, 0, -1), ('_csv.QUOTE_MINIMAL', 0, 0, -1), ('_csv.QUOTE_NONE', 0, 0, -1), ('_csv', 0, 0, -1), ('_csv.writer', 0, 0, -1), ('_csv.__version__', 0, 0, -1), ('_csv.register_dialect', 0, 0, -1), ('cStringIO', 0, 0, -1), ('_csv.Error', 0, 0, -1), ('functools', 0, 0, -1), ('_csv.get_dialect', 0, 0, -1), ('_csv.unregister_dialect', 0, 0, -1), ('_csv.QUOTE_NONNUMERIC', 0, 0, -1), ('_csv.Dialect', 0, 0, -1), ('StringIO.StringIO', 0, 1, -1), ('cStringIO.StringIO', 0, 0, -1), ('_csv.QUOTE_ALL', 0, 0, -1), ('_csv.reader', 0, 0, -1), ('re', 0, 0, -1), ('_csv.list_dialects', 0, 0, -1), ('functools.reduce', 0, 0, -1), ('StringIO', 0, 1, -1), ('_csv.__doc__', 0, 0, -1)] binaries=[] datas=[]>
+send2trash.send2trash: None -> None
+  DEL send2trash.send2trash
+send2trash.plat_win: None -> <PyModule 'send2trash.plat_win' C:\Python27\lib\site-packages\send2trash\plat_win.pyc imports=[('ctypes.wintypes.LPCWSTR', 0, 0, -1), ('ctypes', 0, 0, -1), ('ctypes.wintypes', 0, 0, -1), ('ctypes.c_uint', 0, 0, -1), ('ctypes.wintypes.UINT', 0, 0, -1), ('os.path', 0, 0, -1), ('compat', 0, 0, 1), ('ctypes.byref', 0, 0, -1), ('__future__.unicode_literals', 0, 0, -1), ('__future__', 0, 0, -1), ('ctypes.wintypes.HWND', 0, 0, -1), ('ctypes.Structure', 0, 0, -1), ('ctypes.windll', 0, 0, -1), ('ctypes.wintypes.BOOL', 0, 0, -1), ('compat.text_type', 0, 0, 1)] binaries=[('shell32.dll', 'C:\\WINDOWS\\SYSTEM32\\shell32.dll', 'BINARY')] datas=[]>
+send2trash.plat_gio: None -> <PyModule 'send2trash.plat_gio' C:\Python27\lib\site-packages\send2trash\plat_gio.pyc imports=[('gi.repository.GObject', 0, 0, -1), ('gi.repository.Gio', 0, 0, -1), ('gi.repository', 0, 0, -1)] binaries=[] datas=[]>
+send2trash.sys: None -> None
+send2trash.plat_osx: None -> <PyModule 'send2trash.plat_osx' C:\Python27\lib\site-packages\send2trash\plat_osx.pyc imports=[('ctypes', 0, 0, -1), ('ctypes.c_char_p', 0, 0, -1), ('ctypes.util', 0, 0, -1), ('ctypes.byref', 0, 0, -1), ('ctypes.c_char', 0, 0, -1), ('__future__.unicode_literals', 0, 0, -1), ('__future__', 0, 0, -1), ('ctypes.Structure', 0, 0, -1), ('compat.binary_type', 0, 0, 1), ('ctypes.cdll', 0, 0, -1), ('ctypes.util.find_library', 0, 0, -1), ('compat', 0, 0, 1)] binaries=[] datas=[]>
+send2trash.plat_other: None -> <PyModule 'send2trash.plat_other' C:\Python27\lib\site-packages\send2trash\plat_other.pyc imports=[('sys', 0, 0, -1), ('os.path', 0, 0, -1), ('urllib.parse.quote', 0, 0, -1), ('os', 0, 0, -1), ('urllib', 0, 1, -1), ('__future__.unicode_literals', 0, 0, -1), ('__future__', 0, 0, -1), ('urllib.quote', 0, 1, -1), ('stat', 0, 0, -1), ('datetime', 0, 0, -1), ('urllib.parse', 0, 0, -1), ('datetime.datetime', 0, 0, -1)] binaries=[] datas=[]>
+send2trash.ctypes: None -> None
+ctypes: None -> <PkgModule 'ctypes' C:\Python27\lib\ctypes\__init__.pyc imports=[('_ctypes.set_errno', 0, 0, -1), ('_ctypes._cast_addr', 0, 0, -1), ('_ctypes.FUNCFLAG_USE_ERRNO', 0, 0, -1), ('_ctypes._memmove_addr', 0, 0, -1), ('os', 0, 0, -1), ('struct', 0, 0, -1), ('_ctypes.get_last_error', 0, 1, -1), ('ctypes._endian.BigEndianStructure', 0, 0, -1), ('_ctypes._memset_addr', 0, 0, -1), ('_ctypes._wstring_at_addr', 0, 0, -1), ('_ctypes.set_conversion_mode', 0, 0, -1), ('_ctypes.alignment', 0, 0, -1), ('sys', 0, 0, -1), ('_ctypes.Structure', 0, 0, -1), ('_ctypes._string_at_addr', 0, 0, -1), ('_ctypes._SimpleCData', 0, 1, -1), ('_ctypes.FUNCFLAG_USE_LASTERROR', 0, 0, -1), ('_ctypes.CFuncPtr', 0, 0, -1), ('_ctypes.Union', 0, 0, -1), ('struct.calcsize', 1, 0, -1), ('_ctypes', 0, 0, -1), ('_ctypes.ArgumentError', 0, 0, -1), ('_ctypes.dlopen', 0, 1, -1), ('struct', 1, 0, -1), ('_ctypes.RTLD_GLOBAL', 0, 0, -1), ('_ctypes.LoadLibrary', 0, 1, -1), ('_ctypes.get_errno', 0, 0, -1), ('_ctypes.resize', 0, 0, -1), ('_ctypes.POINTER', 0, 0, -1), ('_ctypes.set_last_error', 0, 1, -1), ('_ctypes.FUNCFLAG_CDECL', 0, 0, -1), ('_ctypes.FormatError', 0, 1, -1), ('_ctypes.pointer', 0, 0, -1), ('_ctypes.RTLD_LOCAL', 0, 0, -1), ('_ctypes._pointer_type_cache', 0, 0, -1), ('_ctypes._check_HRESULT', 0, 1, -1), ('_ctypes._SimpleCData', 0, 0, -1), ('struct.calcsize', 0, 0, -1), ('ctypes._endian.LittleEndianStructure', 0, 0, -1), ('_ctypes.FUNCFLAG_PYTHONAPI', 0, 0, -1), ('_ctypes.FUNCFLAG_STDCALL', 0, 1, -1), ('_ctypes', 0, 1, -1), ('ctypes._endian', 0, 0, -1), ('_ctypes.sizeof', 0, 0, -1), ('_ctypes.addressof', 0, 0, -1), ('_ctypes.__version__', 0, 0, -1), ('_ctypes._Pointer', 0, 0, -1), ('_ctypes.byref', 0, 0, -1), ('_ctypes.Array', 0, 0, -1)] binaries=[] datas=[]>
+ctypes.wintypes: None -> <PyModule 'ctypes.wintypes' C:\Python27\lib\ctypes\wintypes.pyc imports=[('ctypes', 0, 0, -1), ('ctypes.*', 0, 0, -1), ('ctypes._SimpleCData', 0, 0, -1)] binaries=[] datas=[]>
+ctypes.c_uint: None -> None
+  DEL ctypes.c_uint
+send2trash.os: None -> None
+send2trash.compat: None -> <PyModule 'send2trash.compat' C:\Python27\lib\site-packages\send2trash\compat.pyc imports=[('sys', 0, 0, -1)] binaries=[] datas=[]>
+ctypes.byref: None -> None
+  DEL ctypes.byref
+send2trash.__future__: None -> None
+ctypes.Structure: None -> None
+  DEL ctypes.Structure
+ctypes.windll: None -> None
+  DEL ctypes.windll
+ctypes._ctypes: None -> None
+_ctypes: None -> <ExtensionModule '_ctypes' C:\Python27\DLLs\_ctypes.pyd imports=[] binaries=[] datas=[]>
+ctypes.os: None -> None
+ctypes.struct: None -> None
+ctypes.ctypes: None -> None
+ctypes._endian: None -> <PyModule 'ctypes._endian' C:\Python27\lib\ctypes\_endian.pyc imports=[('ctypes', 0, 0, -1), ('ctypes.*', 0, 0, -1), ('sys', 0, 0, -1)] binaries=[] datas=[]>
+ctypes.sys: None -> None
+ctypes._SimpleCData: None -> None
+  DEL ctypes._SimpleCData
+send2trash.gi: None -> None
+gi: None -> None
+  DEL gi
+gi: None -> None
+  DEL gi
+gi: None -> None
+  DEL gi
+ctypes.c_char_p: None -> None
+  DEL ctypes.c_char_p
+ctypes.util: None -> <PyModule 'ctypes.util' C:\Python27\lib\ctypes\util.pyc imports=[('struct', 1, 0, -1), ('sys', 0, 0, -1), ('errno', 0, 1, -1), ('os', 0, 0, -1), ('ctypes.macholib.dyld', 0, 1, -1), ('re', 0, 1, -1), ('tempfile', 0, 1, -1), ('ctypes.macholib.dyld.dyld_find', 0, 1, -1), ('ctypes', 1, 0, -1), ('imp', 1, 0, -1), ('ctypes.cdll', 1, 0, -1)] binaries=[] datas=[]>
+ctypes.byref: None -> None
+  DEL ctypes.byref
+ctypes.c_char: None -> None
+  DEL ctypes.c_char
+ctypes.Structure: None -> None
+  DEL ctypes.Structure
+ctypes.cdll: None -> None
+  DEL ctypes.cdll
+ctypes.errno: None -> None
+ctypes.macholib: None -> <PkgModule 'ctypes.macholib' C:\Python27\lib\ctypes\macholib\__init__.pyc imports=[] binaries=[] datas=[]>
+ctypes.macholib.dyld: None -> <PyModule 'ctypes.macholib.dyld' C:\Python27\lib\ctypes\macholib\dyld.pyc imports=[('framework', 0, 0, -1), ('itertools', 0, 0, -1), ('dylib.dylib_info', 0, 0, -1), ('os', 0, 0, -1), ('itertools.*', 0, 0, -1), ('dylib', 0, 0, -1), ('framework.framework_info', 0, 0, -1)] binaries=[] datas=[]>
+ctypes.re: None -> None
+ctypes.tempfile: None -> None
+ctypes.imp: None -> None
+ctypes.cdll: None -> None
+  DEL ctypes.cdll
+ctypes.macholib.framework: None -> <PyModule 'ctypes.macholib.framework' C:\Python27\lib\ctypes\macholib\framework.pyc imports=[('re', 0, 0, -1)] binaries=[] datas=[]>
+ctypes.macholib.itertools: None -> None
+ctypes.macholib.dylib: None -> <PyModule 'ctypes.macholib.dylib' C:\Python27\lib\ctypes\macholib\dylib.pyc imports=[('re', 0, 0, -1)] binaries=[] datas=[]>
+ctypes.macholib.os: None -> None
+ctypes.macholib.re: None -> None
+send2trash.urllib: None -> None
+send2trash.stat: None -> None
+send2trash.datetime: None -> None
+_scproxy: None -> None
+  DEL _scproxy
+_scproxy: None -> None
+  DEL _scproxy
+_scproxy: None -> None
+  DEL _scproxy
+rourl2path: None -> None
+  DEL rourl2path
+rourl2path: None -> None
+  DEL rourl2path
+rourl2path: None -> None
+  DEL rourl2path
+cl: None -> None
+  DEL cl
+cl: None -> None
+  DEL cl
+SOCKS: None -> None
+  DEL SOCKS
+EasyDialogs: None -> None
+  DEL EasyDialogs
+EasyDialogs: None -> None
+  DEL EasyDialogs
+pwd: None -> None
+  DEL pwd
+termios: None -> None
+  DEL termios
 _csv: None -> <BuiltinModule '_csv' None imports=[] binaries=[] datas=[]>
 __main__: <PyScript '__main__' Main.py imports=[('RecordWindow', 0, 0, -1), ('wx', 0, 0, -1), ('sys', 0, 0, -1), ('RecordController', 0, 0, -1), ('RecordWindow.RecordWindow', 0, 0, -1), ('RecordController.RecordController', 0, 0, -1)] binaries=[] datas=[]> -> <PyScript '__main__' C:\Python27\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_win32comgenpy.py imports=[('win32com', 0, 0, -1), ('atexit', 0, 0, -1), ('win32com.gen_py', 0, 0, -1), ('shutil', 0, 0, -1), ('os', 0, 0, -1), ('tempfile', 0, 0, -1)] binaries=[] datas=[]>
 posix: None -> None
